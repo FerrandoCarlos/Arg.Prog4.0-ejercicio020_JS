@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+:root {
+  --medium-slate-blue: #7241ff;
+  --light-slate-blue:#8E67FF;
+  --deep-sky-blue: #03b0fd;
+  --pale-cornflower-blue: #b0d9ff;
+  --aqua: #02fbff;
+  --torch-red: #fd0333;
+  --radical-red:#FD355C;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+.wrapper-savebooks {
+  height: 50%;
+  width: 50%;
+  padding: 3rem;
+  margin-top: 10px;
+
+  /* From https://css.glass */
+  background: rgba(3, 176, 253, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+  border: 1px solid rgba(3, 176, 253, 0.37);
+}
+.maintitle {
+  text-align: center;
+  margin-top: -10px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+.form label,
+input {
+  width: 80%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+button {
+  color: white;
+  font-weight: bold;
+  display: block;
+  margin: 10px 10%;
+  width: 80%;
+  font-size: 1.2rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+input,
+button {
+  border-radius: 10px;
+  border: 1px solid var(--medium-slate-blue);
+  padding: 8px;
+}
+
+.btnsave {
+  background: var(--medium-slate-blue);
+  margin-top: 40px ;
+}
+.btnsave:hover{
+    background: var(--light-slate-blue);
+    transform: scale(0.94);
+}
+
+.wrapper-results {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 0.8rem;
+  margin-top: 10px;
+  margin-bottom: 40px;
+
+  /* From https://css.glass */
+  background: rgba(3, 176, 253, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+  border: 1px solid rgba(3, 176, 253, 0.37);
+}
+
+.btnerase{
+    background: var(--torch-red);
+}
+.btnerase:hover{
+    background: var(--radical-red);
+    transform: scale(0.94);
+}
+
+ul {    
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+#response p{
+    text-align: center;
+    color: darkred;
+}
+
+#mensaje .exito{
+    color: darkgreen;
+    font-weight: bold;
+}
+
+#mensaje .error{
+    color: red;
+    font-weight: bold;
+}

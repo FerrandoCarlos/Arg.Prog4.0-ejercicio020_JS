@@ -1,32 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>APP Libros Leidos</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="wrapper-savebooks">
-            <h1 class="maintitle">Libros Leidos</h1>
-            <form action="" class="form">
-                <label for="title">Título del libro</label>
-                <input type="text" name="title" id="booktitle" required>
-                <label for="author">Autor/a</label>
-                <input type="text" name="author" id="nameauthor" required>
-                <label for="year">Año de publicación</label>
-                <input type="number" name="year" id="publishedyear" required>
-                <button type="button" class="btnsave">Guardar Libro</button>
-            </form>
-            <div class="wrapper-results">
-                <h2 class="subtitle">Lista de libros Leídos</h2>
-                <div id="response"></div>
-                <button class="btnerase">Borrar los libros guardados</button>
-
-            </div>
-        </div>
+      <div class="wrapper-savebooks">
+        <h1 class="maintitle">Libros Leidos</h1>
+        <form class="form">
+          <label for="title"><span>Título del libro</span></label>
+          <input type="text" name="title" id="booktitle" required />
+          <label for="author">Autor/a</label>
+          <input type="text" name="author" id="nameauthor" required />
+          <label for="year">Año de publicación</label>
+          <input type="number" name="year" id="publishedyear" required />
+          <button type="button" class="btnsave">Guardar Libro</button>
+        </form>
+      </div>
+      <div class="wrapper-results">
+        <h2 class="subtitle">Lista de libros Leídos</h2>
+        <div id="response"></div>
+        <button class="btnerase">Borrar los libros guardados</button>
+      </div>
     </div>
     <script src="./js/index.js"></script>
-</body>
+  </body>
 </html>
