@@ -19,11 +19,12 @@ body {
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  padding: 3.125rem;
 }
 .wrapper-savebooks {
   height: 50%;
   width: 50%;
-  padding: 3rem;
+  padding: 2rem;
   margin-top: 10px;
 
   /* From https://css.glass */
@@ -53,6 +54,17 @@ input {
   text-align: center;
 }
 
+#response ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: .3rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+
+}
 button {
   color: white;
   font-weight: bold;
@@ -123,12 +135,14 @@ li {
     color: darkred;
 }
 
-#mensaje .exito{
+#message .exito{
     color: darkgreen;
     font-weight: bold;
+    font-size: 1.3rem;
 }
 
-#mensaje .error{
+#message .error{
     color: red;
     font-weight: bold;
+    font-size: 1.3rem;
 }

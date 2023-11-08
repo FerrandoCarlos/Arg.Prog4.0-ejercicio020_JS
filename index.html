@@ -12,18 +12,19 @@
         <h1 class="maintitle">Libros Leidos</h1>
         <form class="form">
           <label for="title"><span>Título del libro</span></label>
-          <input type="text" name="title" id="booktitle" required />
+          <input type="text" name="titulo" id="title" required />
           <label for="author">Autor/a</label>
-          <input type="text" name="author" id="nameauthor" required />
+          <input type="text" name="autor" id="author" required />
           <label for="year">Año de publicación</label>
-          <input type="number" name="year" id="publishedyear" required />
-          <button type="button" class="btnsave">Guardar Libro</button>
+          <input type="number" name="anio" id="year" required />
+          <button type="button"  id="btnsave" class="btnsave">Guardar Libro</button>
         </form>
       </div>
       <div class="wrapper-results">
         <h2 class="subtitle">Lista de libros Leídos</h2>
         <div id="response"></div>
-        <button class="btnerase">Borrar los libros guardados</button>
+        <div id="message"></div>
+        <button type="button" id="btnerase" class="btnerase">Borrar los libros guardados</button>
       </div>
     </div>
     <script src="./js/index.js"></script>
